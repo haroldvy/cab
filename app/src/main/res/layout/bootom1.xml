@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:layout_width="192dp"
+        android:layout_height="166dp"
+        android:src="@drawable/imagen"
+        android:layout_weight="0.02" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="399dp"
+
+        android:layout_height="349dp"
+
+        android:paddingLeft="16dp"
+
+        android:paddingRight="16dp"
+
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_weight="0.41">
+
+
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="21dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="nombre     "
+                android:textSize="20sp"
+                android:textColor="#B40404"
+                android:layout_marginLeft="40sp"/>
+
+            <EditText
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:textColor="#DF0101"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="21dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:text="apellido     "
+                android:textSize="20sp"
+                android:textColor="#B40404"
+                android:layout_marginLeft="40sp"/>
+
+            <EditText
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:textColor="#DF0101"
+                android:inputType="textPersonName"
+                android:text=""
+                android:ems="10"
+
+                android:visibility="visible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="21dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:text="celular     "
+                android:textSize="20sp"
+                android:textColor="#B40404"
+                android:layout_marginLeft="40sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+
+                android:ems="10"
+
+                android:layout_weight="1"
+                android:phoneNumber="false"
+                android:textColor="#DF0101"
+                android:numeric="decimal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="21dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.18">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="telefono    "
+                android:textSize="20sp"
+                android:textColor="#B40404"
+                android:layout_marginLeft="40sp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+
+                android:ems="10" android:id="@+id/editText4"
+                android:layout_weight="1"
+                android:phoneNumber="false"
+                android:textColor="#DF0101"
+                android:numeric="decimal" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="339dp"
+            android:layout_height="21dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.18"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:text="imail     "
+                android:textSize="20sp"
+                android:textColor="#B40404"
+                android:layout_marginLeft="40sp"/>
+
+            <EditText
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:textColor="#DF0101"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText"
+                android:visibility="visible"
+                android:layout_weight="0.52" />
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+
+            android:id="@+id/btn_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="guardar"
+            android:textSize="20sp"
+
+            android:layout_gravity="center_horizontal" />
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+
