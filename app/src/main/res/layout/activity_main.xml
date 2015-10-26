@@ -1,72 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.design.widget.CoordinatorLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+
 	tools:context=".MainActivity">
 
-	<ImageView
-		android:id="@+id/iv_ichigo"
-		android:layout_width="match_parent"
-		android:layout_height="100dp"
-		android:src="@drawable/ichigo"
-		/>
-
-	<Button
-		android:id="@+id/btn_accion"
-		android:layout_width="100dp"
-		android:layout_height="50dp"
-		android:text="Accion"
-		android:layout_below="@+id/iv_ichigo"
-		/>
-
-	<Button
-		android:id="@+id/btn_accion2"
-		android:layout_width="100dp"
-		android:layout_height="50dp"
-		android:text="Accion 2"
-		android:layout_below="@+id/iv_ichigo"
-		android:layout_alignParentRight="true"
-		/>
-
-
-	<LinearLayout
-		android:orientation="vertical"
-		android:layout_width="match_parent"
+	<android.support.design.widget.AppBarLayout
 		android:layout_height="wrap_content"
-		android:layout_below="@+id/btn_accion"
-		android:paddingLeft="30dp"
-		>
+		android:layout_width="match_parent"
+		android:background="#B40404"
+		android:theme="@style/AppTheme.AppBarOverlay">
 
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="#DF0101"
+			app:popupTheme="@style/AppTheme.PopupOverlay"/>
 		<TextView
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:text="Hola"
-			android:textSize="24sp"
-			android:layout_gravity="center"
-			/>
+			android:text="harold"
+			android:textSize="20sp"/>
 
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Cajas de "
-			android:textSize="24sp"
-			android:layout_marginLeft="40dp"
+	</android.support.design.widget.AppBarLayout>
+<include layout="@layout/bootom1"/>
 
-			/>
-
-		<TextView
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Texto"
-			android:textSize="24sp"
-			/>
-
-
-		
-
-	</LinearLayout>
-
-
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
