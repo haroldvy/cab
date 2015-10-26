@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
         //toolbar.setTitle("Primera Aplicación");
-       // toolbar.setLogo(R.mipmap.ic_launcher);
+        // toolbar.setLogo(R.mipmap.ic_launcher);
 
         //setSupportActionBar(toolbar);
 
